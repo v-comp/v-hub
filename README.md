@@ -10,4 +10,3 @@ yarn add v-hub
 # or
 npm install --save v-hub
 ```
-
