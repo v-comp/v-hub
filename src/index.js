@@ -1,7 +1,5 @@
-import VHubComponent from './v-hub.vue';
-
-VHubComponent.install = Vue => {
-  Vue.component(VHubComponent.name, VHubComponent);
+export default function (Vue) {
+  const vm = new Vue();
+  ['on', 'once', 'off', 'emit'].forEach(n => vm[`${n}`] = vm[`$${n}`]);
+  Vue.prototype.$hub = vm;
 };
-
-export default VHubComponent;
