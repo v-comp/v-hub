@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A vue plugin working as event bus.",
   "author": "wemlion <angusfu1126@qq.com>",
+  "main": "dist/build.js",
   "scripts": {
     "build:watch": "rollup -c rollup.config.js -w",
     "build": "rollup -c rollup.config.js",
